@@ -4,6 +4,4 @@
 
 This is my _first_ repository dedicated to **frontend**.
 
-Fun fact: I speak Japanese
-
-初めまして❣
+Here I created my 1st site about Tour of Saint Petersburg.
