@@ -1,15 +1,21 @@
 @font-face {
-    font-family: "Gilroy";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(".fonts/Gilroy-Light.woff2") format(woff2);
+    font-display: swap;
+    src: 
+        url("./fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("./fonts/OpenSans-Regular.woff") format("woff");
 }
 
 @font-face {
-    font-family: "Bol";
+    font-family: "Open Sans";
     font-style: normal;
     font-weight: 700;
-    src: url(".fonts/Gilroy-ExtraBold.woff2") format(woff2);
+    font-display: swap;
+    src: 
+        url("./fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("./fonts/OpenSans-Bold.woff") format("woff");
 }
 
 .page {
@@ -18,11 +24,11 @@
 
 .page-body {
     min-height: 100%;
-    font-family: "Gilroy";
-    font-size: 20px;
-    color: #000;
-    background-color: #fff;
     margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
 }
 
 .container {
@@ -36,11 +42,36 @@
     padding: 20px 0;
 }
 
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbar-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.navbar-link {
+    display: inline-block;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    opacity: 50%;
+}
+
 .intro {
     min-height: 610px;
     background-image: url('images/intro.png');
     background-size: cover;
     background-position: center;
+    background-color: #242424;
     color: #fff;
     padding-top: 180px;
     padding-bottom: 120px;
@@ -76,6 +107,10 @@
     grid-template-columns: 1fr 260px;
 }
 
+.page-main-column {
+    background-color: #fff;
+}
+
 .page-section {
     position: relative;
 }
@@ -86,6 +121,7 @@
     right: 0;
     bottom: 0;
     width: 9999px;
+    background-color: #f2f2f2;
 }
 
 .program-title {
@@ -201,7 +237,13 @@
 .prices-table {
     width: 100%;
     margin-top: 30px;
+    background-color: #fff;
     border-collapse: collapse;
+    color: #fff;
+}
+
+.prices-table tr:nth-child(odd) td {
+    background-color: #f2f2f2;
 }
 
 .prices-table th{
@@ -252,6 +294,7 @@
 }
 
 .service-list {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
@@ -265,6 +308,7 @@
     margin-top: auto;
     padding: 20px;
     border-radius: 15px;
+    background-color: #242424;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
@@ -280,6 +324,7 @@
     gap: 40px; 
     padding: 20px 80px 20px 40px; 
     border-radius: 20px;
+    background-color: #f8f8f8;
 }
 
 .reviews-item:not(:last-child) {
@@ -333,6 +378,7 @@
 .contacts-content {
     border-radius: 20px;
     padding: 20px 280px 20px 40px;
+    background-color: #f8f8f8;
 }
 
 .contacts-text-wrapper {
@@ -358,6 +404,7 @@
     justify-content: space-between;
     font-size: 20px;
     border-radius: 15px;
+    background-color: #242424;
     padding: 20px 40px;
     padding-right: 80px;
     color: #fff;
@@ -382,6 +429,7 @@
 
 .sidebar {
     padding: 40px 0 40px 20px;
+    background-color: #242424;
     color: #fff;
 }
 
@@ -426,6 +474,7 @@
 
 .page-footer {
     padding: 30px 0;
+    background-color: #242424;
     color: #000000;
 }
 
