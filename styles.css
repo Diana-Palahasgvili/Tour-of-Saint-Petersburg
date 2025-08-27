@@ -183,7 +183,7 @@
     font-weight: 700;
 }
 
-.prices-text-wrapper {
+.prices-text-wrapper p {
     margin: 0;
 }
 
@@ -273,6 +273,13 @@
 
 .reviews-item {
     border-radius: 20px;
+    margin: 0; 
+    margin-bottom: 30px;
+    display: grid; 
+    grid-template-columns: 150px 1fr;
+    gap: 40px; 
+    padding: 20px 80px 20px 40px; 
+    border-radius: 20px;
 }
 
 .reviews-item:not(:last-child) {
@@ -295,6 +302,7 @@
 }
 
 .reviews-item-image {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -324,6 +332,7 @@
 
 .contacts-content {
     border-radius: 20px;
+    padding: 20px 280px 20px 40px;
 }
 
 .contacts-text-wrapper {
@@ -346,6 +355,7 @@
 .contacts-btn {
     position: relative;
     display: flex;
+    justify-content: space-between;
     font-size: 20px;
     border-radius: 15px;
     padding: 20px 40px;
@@ -386,6 +396,10 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.sidebar li:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 .card-image-title {
