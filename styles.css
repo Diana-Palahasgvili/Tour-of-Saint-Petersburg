@@ -177,6 +177,15 @@
     margin-bottom: 10px;
 }
 
+.auditory {
+    position: relative;
+}
+
+.auditory-content {
+    position: relative;
+    z-index: 1;
+}
+
 .auditory-title {
     margin: 0;
     margin-bottom: 30px;
@@ -186,17 +195,17 @@
 
 .auditory-top {
     display: grid;
-    grid-template-columns: repeat(3 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.auditory-image-wraper {
+.auditory-image-wrapper {
     height: 160px;
     overflow: hidden;
     border-radius: 20px;
 }
 
-.auditory-image{
+.auditory-image {
     display: block;
     width: 100%;
     height: 100%;
